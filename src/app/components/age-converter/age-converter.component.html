@@ -1,0 +1,15 @@
+<input type="date" name="date" id="date" ngModel #date="ngModel" (change)="baseDate(date)">
+
+<div>
+    <span>Age réel : @if (date.dirty) {
+        {{calculateAge()}} ans
+    }@else {
+        
+    }</span>
+    <br>
+    <span>Age en chien : @if (date.dirty) {
+        {{calculateDogAge()}} ans
+    }@else {
+        
+    }</span>
+</div>

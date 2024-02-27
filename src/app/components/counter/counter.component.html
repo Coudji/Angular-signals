@@ -1,0 +1,23 @@
+<div>
+    <span>Compteur</span>
+    <br>
+    <span>{{counter}}</span>
+    <br>
+    <button (click)="basicIncrement()">+</button>
+    <button (click)="basicDecrement()">-</button>
+</div>
+<hr>
+<div>
+    <span>S Compteur</span>
+    <br>
+    <span>{{signalCounter()}}</span>
+    <br>
+    <button (click)="signalIncrement()">+</button>
+    <button (click)="signalDecrement()">-</button>
+</div>
+<hr>
+<div>
+    <span>Compteur * 10</span>
+    <br>
+    <span>{{tenTimeSignalCounter()}}</span>
+</div>
